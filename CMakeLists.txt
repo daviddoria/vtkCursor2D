@@ -1,0 +1,9 @@
+cmake_minimum_required(VERSION 2.6)
+
+PROJECT(Cursor2D2)
+
+FIND_PACKAGE(VTK REQUIRED)
+INCLUDE(${VTK_USE_FILE})
+
+ADD_EXECUTABLE(Cursor2D2 Test.cpp vtkCursor2D2.cxx)
+TARGET_LINK_LIBRARIES(Cursor2D2 vtkHybrid )
